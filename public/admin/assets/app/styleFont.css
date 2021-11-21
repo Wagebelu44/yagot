@@ -1,0 +1,29 @@
+
+@font-face{
+	font-family:HelveticaRoman;
+	src:url(fonts/HelveticaNeueLTArabic-Roman.eot);
+	src:url(fonts/HelveticaNeueLTArabic-Roman.eot?#iefix) format("embedded-opentype"),url(fonts/HelveticaNeueLTArabic-Roman.woff) format("woff"),url(fonts/HelveticaNeueLTArabic-Roman.ttf) format("truetype"),url(fonts/HelveticaNeueLTArabic-Roman.svg#svgFontName) format("svg")
+}
+@font-face{
+	font-family:HelveticaLight;
+	src:url(fonts/HelveticaNeueLTArabic-Light.eot);
+	src:url(fonts/HelveticaNeueLTArabic-Light.eot?#iefix) format("embedded-opentype"),url(fonts/HelveticaNeueLTArabic-Light.woff) format("woff"),url(fonts/HelveticaNeueLTArabic-Light.ttf) format("truetype"),url(fonts/HelveticaNeueLTArabic-Light.svg#svgFontName) format("svg");
+	font-weight:400;
+}
+@font-face{
+	font-family:HelveticaBold;
+	src:url(fonts/HelveticaNeueLTArabic-Bold.eot);
+	src:url(fonts/HelveticaNeueLTArabic-Bold.eot?#iefix) format("embedded-opentype"),url(fonts/HelveticaNeueLTArabic-Bold.woff) format("woff"),url(fonts/HelveticaNeueLTArabic-Bold.ttf) format("truetype"),url(fonts/HelveticaNeueLTArabic-Bold.svg#svgFontName) format("svg");
+	font-weight:700;
+}
+
+body >*{
+    font-family: 'HelveticaRoman','HelveticaLight','HelveticaBold', sans-serif !important;
+}
+
+   body,h1,h2,h3,h4,h5,h6,a,label,p,.btn,input,td,td,button:not(.close),select,option,textarea {
+
+    font-family: 'HelveticaRoman','HelveticaLight','HelveticaBold' ,sans-serif !important;
+}
+
+

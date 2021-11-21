@@ -1,0 +1,11 @@
+@font-face{
+	font-family:HelveticaRoman;
+	src:url(../fonts/HelveticaNeueLTArabic-Roman.eot);
+	src:url(../fonts/HelveticaNeueLTArabic-Roman.eot?#iefix) format("embedded-opentype"),url(../fonts/HelveticaNeueLTArabic-Roman.woff) format("woff"),url(../fonts/HelveticaNeueLTArabic-Roman.ttf) format("truetype"),url(../fonts/HelveticaNeueLTArabic-Roman.svg#svgFontName) format("svg")
+}
+body{font-family: HelveticaRoman, Arial, Helvetica, sans-serif;}
+.warpper-print{width: 620px;margin-right: auto;margin-left: auto;text-align: right;}
+#print-logo{margin: 20px 0;text-align: center;}
+#print-title{margin-bottom: 20px;}
+#print-photo{margin-bottom: 20px;}
+#print-details *{font-family: HelveticaRoman, Arial, Helvetica, sans-serif; max-width: 100%;}

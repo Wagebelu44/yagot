@@ -1,0 +1,17 @@
+/**********************************
+
+Name: cmxform Styles
+
+***********************************/
+
+form.cmxform label.error, label.error {
+	/* remove the next line when you have trouble in IE6 with labels in list */
+	color: red;
+	font-style: italic;
+	margin-right: 7px;
+	    font-size: 11px;
+}
+div.error { display: none; }
+input.checkbox{ border: none }
+input.error,select.error,textarea.error { border-bottom: 1px solid red; }
+form.cmxform .gray * { color: gray; }

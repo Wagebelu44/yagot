@@ -1,0 +1,464 @@
+.selected_app .ms-container{
+    margin: 0 auto;
+    width: 100%;
+    background: transparent url(/admin/assets/switch.png) no-repeat 50% 50%;
+
+}
+.pagination {
+    justify-content: center;
+    margin-top: 24px;
+}
+.selected_app .ms-container .ms-selectable{
+    float:right;
+}
+
+.selected_app .ms-container .ms-selection {
+    float: left;
+}
+.selected_app .ms-optgroup{
+    margin-bottom: 12px !important;
+}
+.selected_app .ms-optgroup-label{
+    color: #282a3c !important;
+    padding: 0px 15px 0px 15px !important;
+    font-weight:bold;
+}
+.selected_app .ms-container .ms-elem-selectable,.selected_app .ms-container .ms-elem-selection{
+    padding: 2px 33px !important;
+    font-size: 13px !important;
+}
+.selected_app .ms-container .ms-list{
+    height: 500px;
+}
+.form-control{
+    padding: 0.5rem 1.15rem !important; 
+}
+#modal_center{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+#modal_center .modal-dialog {
+    margin: 20px auto;
+    max-width: 98%;
+}
+#loading{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: none;
+    opacity: 0.8;
+    z-index: 100000;
+    background-color: #fff;
+    z-index: 199;
+    text-align: center;
+}
+
+#load{
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+position: fixed;
+display: block;
+opacity: 0.8;
+z-index: 100000;
+background-color: #fff;
+z-index: 199;
+text-align: center;
+}
+
+#loading-image {
+position: absolute;
+top: 50%;
+z-index: 200;
+right: 50%;
+z-index: 200;
+}
+
+.search_order{
+position: relative;
+}
+.search_result_order{
+position: absolute;
+left: 14px;
+top: 40px;
+width: 88%;
+display: none;
+background: white;
+border-radius: 4px;
+z-index: 9;
+padding: 0;
+margin: 0;
+border: 1px solid #ccc;
+}
+.search_result_order li {
+list-style: none;
+color: #9a9a9a;
+padding: 12px 10px;
+border-bottom: 1px solid #e8e8e8;
+cursor: pointer;
+}
+.search_result_order li:hover {background-color: #f7f7f7;}
+.search_result_order li:last-child {border: none;}
+.tag.label.label-info{
+display: inline-block;
+color:white;
+background-color: darkcyan;
+padding:5px;
+margin:0;
+border-radius: 20px;
+}
+.datepicker {
+font-size: 0.875em;
+left: 0!important;
+  right: 52%!important ;
+}
+
+.datepicker td, .datepicker th {
+width: 1.5em;
+height: 1.5em;
+}
+
+.search_order{
+position: relative;
+}
+.search_result_order{
+position: absolute;
+left: 18px;
+top: 76px;
+width: 92%;
+display: none;
+background: white;
+border-radius: 4px;
+z-index: 9;
+padding: 0;
+margin: 0;
+border: 1px solid #ccc;
+}
+.search_result_order li {
+list-style: none;
+color: #9a9a9a;
+padding: 12px 10px;
+border-bottom: 1px solid #e8e8e8;
+cursor: pointer;
+}
+.search_result_order li:hover {background-color: #f7f7f7;}
+.search_result_order li:last-child {border: none;}
+
+.table-bordered td{
+text-align: center;
+}
+@media (min-width: 992px) {
+.modal-xlg {
+    max-width: 1000px;
+}
+}
+@media (min-width: 992px) {
+    .modal-xxlg {
+        max-width: 99%;
+    }
+    }
+
+    @media (min-width: 992px) {
+        .modal-xxxlg {
+            max-width: 100%;
+        }
+        }
+
+
+
+.scheduler-border{
+    border: 1px solid #ddd !important;
+    padding: 0 1.4em 0.3em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+}
+
+legend.scheduler-borderL{
+    text-align: right;
+    font-size: 15px;
+        font-weight: bold !important;
+    width: auto;
+    padding: 0 10px;
+
+}
+
+
+.containerCheckbox {
+  display: block;
+  position: relative;
+  padding-right: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.containerCheckbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 6;
+  right: 0;
+  height: 21px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.containerCheckbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.containerCheckbox input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.containerCheckbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.containerCheckbox .checkmark:after {
+  right: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
+.col-md-6 ,.col-md-4  , .col-md-3 ,.col-md-12 ,.col-md-5 , .col-md-2{
+    margin-bottom: 10px;
+
+}
+
+/* */
+
+  span.im-caret {
+                -webkit-animation: 1s blink step-end infinite;
+                animation: 1s blink step-end infinite;
+            }
+
+            @keyframes blink {
+                from, to {
+                    border-right-color: black;
+                }
+                50% {
+                    border-right-color: transparent;
+                }
+            }
+
+            @-webkit-keyframes blink {
+                from, to {
+                    border-right-color: black;
+                }
+                50% {
+                    border-right-color: transparent;
+                }
+            }
+
+            span.im-static {
+                color: grey;
+            }
+
+            div.im-colormask {
+                display: inline-block;
+                border-style: inset;
+                border-width: 2px;
+                -webkit-appearance: textfield;
+                -moz-appearance: textfield;
+                appearance: textfield;
+            }
+
+            div.im-colormask > input {
+                position: absolute;
+                display: inline-block;
+                background-color: transparent;
+                color: transparent;
+                -webkit-appearance: caret;
+                -moz-appearance: caret;
+                appearance: caret;
+                border-style: none;
+                left: 0; /*calculated*/
+            }
+
+            div.im-colormask > input:focus {
+                outline: none;
+            }
+
+            div.im-colormask > input::-moz-selection{
+                background: none;
+            }
+
+            div.im-colormask > input::selection{
+                background: none;
+            }
+            div.im-colormask > input::-moz-selection{
+                background: none;
+            }
+
+            div.im-colormask > div {
+                color: black;
+                display: inline-block;
+                width: 100px; /*calculated*/
+            }
+.m-aside-left--minimize .m-aside-menu .m-menu__nav>.m-menu__item>.m-menu__link .m-menu__link-text {
+    display: inherit;
+}
+
+/*  @media (min-width: 1025px){
+.m-aside-left--enabled .m-body .m-wrapper {
+    -webkit-box-shadow:none;
+    box-shadow:none;
+
+
+}}  */
+
+.m-wrapper{
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+@media (min-width: 1025px){
+.m-aside-left--enabled .m-body .m-wrapper {
+
+    -webkit-box-shadow:0px 0px 0px 0px rgba(233,228,240,0.63);
+    box-shadow:0px 0px 0px 0px rgba(233,228,240,0.63);
+
+}
+}
+.span_total{
+    color: red;
+}
+
+
+.filter-option-inner{
+    height: 24px!important;
+}
+
+/* font in menu */
+@media (min-width: 1025px){
+.m-header-menu.m-header-menu--skin-dark .m-menu__nav>.m-menu__item.m-menu__item--active>.m-menu__link .m-menu__link-text {
+    font-weight: bold;
+}
+
+}
+
+@media (min-width: 1025px){
+.m-header-menu.m-header-menu--skin-dark .m-menu__nav>.m-menu__item:hover>.m-menu__link .m-menu__link-text, .m-header-menu.m-header-menu--skin-dark .m-menu__nav>.m-menu__item.m-menu__item--hover>.m-menu__link .m-menu__link-text {
+    font-weight: bold;
+
+}
+}
+
+@media (min-width: 1025px){
+.m-header-menu.m-header-menu--skin-dark .m-menu__nav>.m-menu__item>.m-menu__link .m-menu__link-text {
+    font-weight: bold;
+}
+}
+
+.line_height_58{
+    line-height:58px;
+}
+
+.padding_right_zero{
+    padding-right: 0px !important;
+}
+/* .btnExcel{
+    background-color: #34bfa3    !important;
+} */
+
+.containerCheckbox:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .containerCheckbox input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .containerCheckbox input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .containerCheckbox .checkmark:after {
+    right: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+
+  #modal_center .table-responsive i{
+      color:#fff;
+  }
+
+  search_order{
+    position: relative;
+}
+.search_result_order{
+    position: absolute;
+    left: 18px;
+    top: 35px;
+    width: 92%;
+    display: none;
+    background: white;
+    border-radius: 4px;
+    z-index: 9;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+}
+.search_result_order li {
+    list-style: none;
+    color: #9a9a9a;
+    padding: 12px 10px;
+    border-bottom: 1px solid #e8e8e8;
+    cursor: pointer;
+}
+.search_result_order li:hover {background-color: #f7f7f7;}
+.search_result_order li:last-child {border: none;}
+.tag_select_dropdown{
+    list-style: none;
+}

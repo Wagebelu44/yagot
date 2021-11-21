@@ -1,0 +1,9 @@
+@charset "utf-8";
+@font-face {
+  font-family: 'yagot font';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/gesstwomedium.ttf);
+}
+@font-face{font-family:CNA;src:url('../fonts/Cocon Next Arabic-Light.eot');src:url('../fonts/Cocon Next Arabic-Light.eot?#iefix') format('embedded-opentype'),url('../fonts/Cocon Next Arabic-Light.woff') format('woff'),url('../fonts/Cocon Next Arabic-Light.ttf') format('truetype'),url('../fonts/Cocon Next Arabic-Light.svg#CoconNextArabic-Light') format('svg');}
+
