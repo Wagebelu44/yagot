@@ -27,9 +27,6 @@ class LoginController extends AdminController
     {
 
         parent::__construct();
-
-        
-
     }
 
     ///////////////////////////////////////////
@@ -39,14 +36,13 @@ class LoginController extends AdminController
     {
 
         return view('admin.login.index');
-
     }
 
     ///////////////////////////////////////////
 
     public function postIndex(Request $request)
 
-    {   
+    {
 
         $field = 'name';
 
@@ -57,20 +53,17 @@ class LoginController extends AdminController
         $remember_token = $request->get('remember_token');
 
 
-        $user = User::where('name',$username)->first();
+        $user = User::where('name', $username)->first();
 
-        if($user != ''){
-            
-            if($user->status != 1){
+        if ($user != '') {
+
+            if ($user->status != 1) {
 
                 return redirect('/admin/login')->with(['danger' => 'عذرا ، الحساب معطل الرجاء مراجعة الإدارة']);
-
             }
-
-        }else{
+        } else {
 
             return redirect('/admin/login')->with(['danger' => 'عذرا ، خطأ في البيانات المدخلة']);
-
         }
 
         $admin[$field] = $username;
@@ -79,30 +72,23 @@ class LoginController extends AdminController
         // $admin['status'] = 1;
 
 
-       
-        if (Auth::attempt($admin, $remember_token))  {
-                
-            if($user->lang_id == 1){
+
+        if (Auth::attempt($admin, $remember_token)) {
+
+            if ($user->lang_id == 1) {
                 \App::setLocale('ar');
                 $lang = 'ar';
-            }else{
+            } else {
                 \App::setLocale('en');
                 $lang = 'en';
             }
-            
-            $request->session()->put('lang_id',$lang);
+
+            $request->session()->put('lang_id', $lang);
             return redirect('/admin/dashboard');
-
-        }
-
-        else
-
-        {
+        } else {
 
             return redirect('/admin/login')->with(['danger' => 'عذرا ، خطأ في البيانات المدخلة']);
-
         }
-
     }
 
     ///////////////////////////////////////////
@@ -116,7 +102,5 @@ class LoginController extends AdminController
         Auth::guard('admin')->logout();
 
         return redirect('/');
-
     }
-
 }

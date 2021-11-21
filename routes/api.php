@@ -4,7 +4,7 @@
 
 use Illuminate\Http\Request;
 
-
+use Illuminate\Support\Facades\Route;
 
 /*
 
@@ -36,7 +36,7 @@ use Illuminate\Http\Request;
 
 
 
-Route::group([ 'namespace' => 'API' ,'prefix' => 'auth'], function () {
+Route::group(['namespace' => 'API', 'prefix' => 'auth'], function () {
     Route::post('login', 'AuthController@login');
     Route::post('signup', 'AuthController@signup');
     Route::post('logout', 'AuthController@logout');
@@ -46,8 +46,8 @@ Route::group([ 'namespace' => 'API' ,'prefix' => 'auth'], function () {
     Route::post('fcm_token', 'AuthController@update_fcm_token')->middleware('CheckApi');
     Route::post('send_code', 'AuthController@send_code')->middleware('CheckApi');
     Route::post('activate', 'AuthController@activate')->middleware('CheckApi');
-    
-    Route::group( [ 'middleware'  => [ 'api']] , function() {
+
+    Route::group(['middleware'  => ['api']], function () {
 
         Route::get('logout', 'AuthController@logout');
 
@@ -57,21 +57,20 @@ Route::group([ 'namespace' => 'API' ,'prefix' => 'auth'], function () {
 
         Route::get('user', 'AuthController@user');
 
-        
+
 
         // Route::get('user', 'AuthController@user');
 
     });
-
 });
 
 
 
-Route::group( [ 'namespace' => 'API' ,'middleware'  => [ 'api']] , function() {
+Route::group(['namespace' => 'API', 'middleware'  => ['api']], function () {
 
     Route::get('home', 'HomeController@index');
 
-    // Profile 
+    // Profile
     Route::get('profile', 'ProfileController@index');
     Route::get('profile/my-prouduct', 'ProfileController@prouduct')->middleware('CheckApi');
     Route::get('profile/editProfile', 'ProfileController@editProfile')->middleware('CheckApi');
@@ -98,7 +97,7 @@ Route::group( [ 'namespace' => 'API' ,'middleware'  => [ 'api']] , function() {
     Route::post('address/add', 'AddressController@add')->middleware('CheckApi');
     Route::post('address/update', 'AddressController@update')->middleware('CheckApi');
     Route::post('address/delete', 'AddressController@delete')->middleware('CheckApi');
-    
+
     //Constant
     Route::get('constant', 'ConstantController@index');
     Route::get('constant/addTrip', 'ConstantController@addTrip')->middleware('CheckApi');
@@ -132,6 +131,4 @@ Route::group( [ 'namespace' => 'API' ,'middleware'  => [ 'api']] , function() {
     Route::post('orders/update', 'OrdersController@update')->middleware('CheckApi');
     Route::post('orders/delete', 'OrdersController@delete')->middleware('CheckApi');
     Route::post('orders/delivery_price', 'OrdersController@delivery_price')->middleware('CheckApi');
-  
-
 });

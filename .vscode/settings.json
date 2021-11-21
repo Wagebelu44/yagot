@@ -1,0 +1,10 @@
+{
+    "i18n-ally.localesPaths": [
+        "resources/lang",
+        "public/admin/assets/app/ckeditors/lang",
+        "public/admin/assets/select_with_ajax/js/locale",
+        "public/admin/assets/app/colorpicker/src/i18n",
+        "public/admin/assets/app/ckeditors/plugins/a11yhelp/dialogs/lang",
+        "public/admin/assets/app/ckeditors/plugins/specialchar/dialogs/lang"
+    ]
+}
